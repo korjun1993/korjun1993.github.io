@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "default", "dirt", "aqua", "contrast", "dark","neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -104,18 +104,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hojun Kim"
+  name             : "호춘(Hojun Kim)"
   avatar           : 
-  bio              : "#개발은 즐겁게<br/>기록은 소중히<br/>취미는 블로그"
+  bio              : "#개발은 즐겁게<br/>#기록은 소중히<br/>#취미는 블로그"
   location         : "Republic of Korea"
   email            :
   links:
-    - label: "Email"
+    - label: "corojoon93@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "corojoon93@gmail.com"
-    - label: "Website"
+      url: ""
+    - label: "Blog"
       icon: "fas fa-fw fa-link"
-      # url: "https://cookie-dev.tistory.com/"
+      url: "https://cookie-dev.tistory.com/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/korjun1993"
+      url: "https://github.com/korjun1993"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -290,3 +290,10 @@ defaults:
       comments: # true
       share: true
       related: true
+
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true

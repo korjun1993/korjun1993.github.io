@@ -1,299 +1,192 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# Site
+repository: korjun1993/korjun1993.github.io
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+# Content configuration version
+version: 2
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "default", "dirt", "aqua", "contrast", "dark","neon", "mint", "plum", "sunrise"
+# Personal info
+name: 김호준
+title: 서버 백엔드 엔지니어
+email: corojoon93@gmail.com
+# email_title: Email (Email title override)
+# phone: Your phone number (optional)
+# phone_title: Phone (Phone title override)
+website: https://cookie-dev.tistory.com
+# website_title: Web (Website title override)
 
-# Site Settings
-locale                   : "ko-KR"
-title                    : "호춘's 기술 블로그"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "김호준(Kim Hojun)"
-description              : "#Backend #개발은 재밌게 #취미는 블로그"
-url                      : "https://korjun1993.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "korjun1993/korjun1993.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-reCaptcha:
-  siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
-lunr:
-  search_within_pages    : # true, false (default)
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
+# Dark Mode (true/false/never)
+darkmode: never
 
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+# Social links
+# twitter_username: jekyllrb
+github_username:  korjun1993
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+facebook_username: corojoon93
+# flickr_username: jekyll
+# instagram_username: jekyll
+linkedin_username: korjun1993
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# orcid_username: 0000-0000-0000-0000
+# googlescholar_username: D847cGsAAAAJ
 
-# Analytics
-analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+# Additional icon links
+# additional_links:
+# - title: Link name
+#  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#  url: Link url (eg. https://google.com)
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
 
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
 
-# Site Author
-author:
-  name             : "호춘(Hojun Kim)"
-  avatar           : 
-  bio              : "#개발은 즐겁게<br/>#기록은 소중히<br/>#취미는 블로그"
-  location         : "Republic of Korea"
-  email            :
-  links:
-    - label: "corojoon93@gmail.com"
-      icon: "fas fa-fw fa-envelope-square"
-      url: ""
-    - label: "Blog"
-      icon: "fas fa-fw fa-link"
-      url: "https://cookie-dev.tistory.com/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/korjun1993"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/profile.jpeg
+about_content: 어린 시절 해킹 소재의 영화/드라마를 보고 컴퓨터에 흥미를 느꼈습니다. 이에 컴퓨터과학/융합보안학을 전공하였습니다. 국내 최대 반도체 설비 메이커에서 C/C++, Java & Spring, Python 등 다양한 기술을 활용해 팀에 도움이 되는 소프트웨어를 개발해왔습니다. 반도체 설비 특성상 다양한 직무와 협업해왔으며, 모두가 쉽게 사용할 수 있는 소프트웨어를 만들기 위해 사용자 가이드를 작성하는 업무를 해왔습니다.<br/>현재는 BtoC 서비스에 흥미를 갖고 웹 기반 애플리케이션 개발을 하고 있습니다. 복잡한 요구사항을 구현하기 위해 `OOP` 기반으로 코드를 작성하고, 코드 품질을 높이기 위한 `테스트코드` 작성을 연습하고 있습니다.
 
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/korjun1993"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: 세메스
+        sub_title: SW Engineer
+        caption: 2020.01 - 2022.03
+        link: https://www.semes.com/
+        quote: >
+          연매출 3조, 국내 최대 반도체 설비 메이커
+        description: | # this will include new lines to allow paragraphs
+          - SCTC3.0(반도체 설비 SW 프레임워크) 기반 신규 API 개발 및 버그 개선
+             - C/C++, modbus/tcp 기반 정전기 측정 드라이버 개발
+             - 정전시 설비 입구 차단 기능 개발
+             - 검색 서비스 SQL Injection 개선
+          - 통합 테스트 시나리오, 사용자 가이드 작성
+          - 백오피스 프로그램 개발
+          - 현장 장애 발생시 파견 대응
+          - 2020년 `우수사원` 수상
+
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: Hotel-Java
+        link: https://github.com/f-lab-edu/hotel-java
+        link_text: https://github.com/f-lab-edu/hotel-java
+        caption: 2023.03 - 2022.06
+        quote: >
+          호텔 예약 서비스
+        description: | # this will include new lines to allow paragraphs
+          - [동시성 이슈를 개선하기 위해 낙관적락 활용](https://cookie-dev.tistory.com/30)<br/>
+             &emsp;❗ 재고가 1인 시점에 두 사용자가 동시에 예약 API를 호출하면 둘 다 예약됌<br/>
+             &emsp;💡 여러 스레드가 데이터베이스에 순차적으로 접근하도록 동시성 해결 솔루션(낙관적락/비관적락/분산락) 적용<br/>
+          - [연결리스트 → 배열리스트 변경으로 성능 개선](https://cookie-dev.tistory.com/27)<br/>
+             &emsp;❗ 테스트용 데이터를 DB에 삽입하는 과정에서 DB 커넥션 타임아웃 발생<br/>
+             &emsp;💡 크기가 1,0000만인 연결리스트를 조회하는 과정에서 시간이 지연됐으나 배열리스트로 변경하여 개선 (800초 → 0.06초)
+          - 도메인/외부API 포트앤어댑터 패턴 적용<br/>
+             &emsp;❗ 잦은 변화가 있는 외부 API로 인해 도메인 코드가 수시로 변함<br/>
+             &emsp;💡 도메인이 인터페이스에 의존하도록 하여 외부 API에 대한 종속성 제거
+      - layout: left
+        border: no
+        title: LOL-Judge
+        link: https://github.com/f-lab-edu/lol-judge
+        link_text: https://github.com/f-lab-edu/lol-judge
+        caption: 2023.03 - 진행중
+        quote: >
+          리그오브레전드 인게임 논쟁에 대한 투표 서비스
+        description: | # this will include new lines to allow paragraphs
+          - [CI/CD 파이프라인 구축](https://cookie-dev.tistory.com/20)<br/>
+             &emsp;❗ 새로운 기능을 개발할 때 마다 **수동으로 배포**하여 시간이 오래 걸리고 실수하는 일이 잦음<br/>
+             &emsp;💡 Naver Cloud Jenkins, GitHub Action을 활용한 CI/CD 파이프라인 구축
+          - [세션 기반 로그인 기능 구현](https://cookie-dev.tistory.com/23)<br/>
+             &emsp;❗ JWT 기반의 로그인은 보안 측면에서 신경 쓸 것이 많아 개발 속도가 느림
+             &emsp;💡 세션, 웹 필터를 활용하여 로그인 기능 구현
+          - [페이징 쿼리 개선](https://cookie-dev.tistory.com/31)<br/>
+             &emsp;❗ 페이징 쿼리에서 테이블 풀 스캔으로 인한 지연 현상 발생<br/>
+             &emsp;💡 인덱스 생성, OFFSET → WHERE 변경으로 쿼리 속도 향상 (0.7초 → 0.003초)
 
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: 인프런 스프링 로드맵
+        sub_title: 인프런 - 김영한의 스프링 완전 정복
+        caption: 2022.11 ~ 진행중
+        quote: >
+        #  Short institution or course description (optional)
+        description: | # this will include new lines to allow paragraphs
+          - Spring의 동작원리와 실무스킬을 알고 싶어 수강
+          - Spring 핵심 개념, Spring MVC, 데이터 접근 원리, AOP 등을 학습
+      - layout: left
+        title: 우아한테크코스 5기 프리코스
+        # sub_title: Qualifications (eg. BA Performing Arts)
+        caption: 2022.10 ~ 2022.11
+        # quote: >
+        #  Short institution or course description (optional)
+        description: | # this will include new lines to allow paragraphs
+          - "유지보수가 편한 코드란 무엇일까"의 답을 찾는 과정에서 참여
+          - 요구사항을 OOP로 구현하는 연습
+          - 이 교육을 계기로 OOP, 클린코드, 테스트코드에 관심을 갖고 꾸준히 학습 중
+      - layout: left
+        title: 삼성청년 SW 아카데미 1기
+        # sub_title: Qualifications (eg. BA Performing Arts)
+        caption: 2018.12 ~ 2019.12
+        # quote: >
+        #  Short institution or course description (optional)
+        description: | # this will include new lines to allow paragraphs
+          - 실무 지식을 익히고 팀 프로젝트 경험을 쌓기 위해 참여
+          - 웹 개발에 필요한 기본 지식(Java, MySQL, HTML, Vue.js) 학습
+          - 협업 툴(GitHub, Jira, Slack)을 이용한 4번의 팀 프로젝트 수행
+  
+  - title: Opensource
+    layout: list
+    content:
+      - layout: left
+        title: 개인 블로그
+        link: https://cookie-dev.tistory.com/
+        link_text: https://cookie-dev.tistory.com/
+        caption: 2023.03 - 진행중
+        description: | # this will include new lines to allow paragraphs
+          - 개발을 하며 만난 문제와 실수를 정리하여 공유하는 블로그
+          - 2023년 1월부터 월 평균 4개의 글을 꾸준히 작성 중
 
+#      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
 
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 15 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
+ - jekyll-seo-tag
 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - https://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]

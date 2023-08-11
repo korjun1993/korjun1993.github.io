@@ -51,7 +51,7 @@ linkedin_username: korjun1993
 # About Section
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpeg
-about_content: 어린 시절 해킹 소재의 영화/드라마를 보고 컴퓨터에 흥미를 느꼈습니다. 이에 컴퓨터과학/융합보안학을 전공하였습니다. 국내 최대 반도체 설비 메이커에서 C/C++, Java & Spring, Python 등 다양한 기술을 활용해 반도체 설비 S/W 및 백오피스 프로그램을 개발해왔습니다. 반도체 설비 특성상 다양한 직무와 협업했으며, S/W에 익숙하지 않은 팀원 및 고객이 쉽게 사용할 수 있도록 사용자 가이드를 작성하는 업무를 해왔습니다.<br/>현재는 BtoC 서비스에 흥미를 갖고 웹 기반 애플리케이션 개발을 하고 있습니다. 복잡한 요구사항을 구현하기 위해 `OOP` 기반으로 코드를 작성하고, 코드 품질을 높이기 위한 `테스트코드` 작성을 연습하고 있습니다.
+about_content: 어린 시절 해킹 소재의 영화/드라마를 보고 컴퓨터에 흥미를 느꼈습니다. 이에 컴퓨터과학/융합보안학을 전공하였습니다. 국내 최대 반도체 설비 메이커에서 C/C++, Java & Spring, Python 등 다양한 기술을 활용해 반도체 설비 S/W 및 백오피스 프로그램을 개발해 왔습니다. 반도체 설비 특성상 다양한 직무와 협업했으며, S/W에 익숙하지 않은 고객과 팀원이 쉽게 사용할 수 있도록 사용자 가이드를 작성하는 업무를 해왔습니다.<br/>현재는 BtoC 서비스에 흥미를 갖고 웹 기반 애플리케이션 개발을 하고 있습니다. 복잡한 요구사항을 구현하기 위해 `OOP` 기반으로 코드를 작성하고, 코드 품질을 높이기 위한 `테스트코드` 작성을 연습하고 있습니다.
 
 content:
   - title: Experience
@@ -69,7 +69,7 @@ content:
              - C/C++, modbus/tcp 기반 정전기 측정 드라이버 개발
              - 정전시 설비 입구 차단 기능 개발
              - 검색 서비스 SQL Injection 개선
-          - 통합 테스트 시나리오, 사용자 가이드 작성
+          - 통합 테스트 시나리오 & 사용자 가이드 작성
           - 백오피스 프로그램 개발
           - 현장 장애 발생시 파견 대응
           - 2020년 `우수사원` 수상
@@ -88,11 +88,11 @@ content:
           호텔 예약 서비스
         description: | # this will include new lines to allow paragraphs
           - [동시성 이슈를 개선하기 위해 낙관적락 활용](https://cookie-dev.tistory.com/30)<br/>
-             &emsp;❗ 재고가 1인 시점에 두 사용자가 동시에 예약 API를 호출하면 둘 다 예약됌<br/>
+             &emsp;❗ 재고가 1인 시점에 두 사용자가 동시에 예약 API를 호출하면 둘 다 예약됨<br/>
              &emsp;💡 여러 스레드가 데이터베이스에 순차적으로 접근하도록 동시성 해결 솔루션(낙관적락/비관적락/분산락) 적용<br/>
           - [연결리스트 → 배열리스트 변경으로 성능 개선](https://cookie-dev.tistory.com/27)<br/>
              &emsp;❗ 테스트용 데이터를 DB에 삽입하는 과정에서 DB 커넥션 타임아웃 발생<br/>
-             &emsp;💡 크기가 1,0000만인 연결리스트를 조회하는 과정에서 시간이 지연됐으나 배열리스트로 변경하여 개선 (800초 → 0.06초)
+             &emsp;💡 크기가 1,0000만 인 연결리스트를 조회하는 과정에서 시간이 지연됐으나 배열리스트로 변경하여 개선 (800초 → 0.06초)
           - 도메인/외부API 포트앤어댑터 패턴 적용<br/>
              &emsp;❗ 잦은 변화가 있는 외부 API로 인해 도메인 코드가 수시로 변함<br/>
              &emsp;💡 도메인이 인터페이스에 의존하도록 하여 외부 API에 대한 종속성 제거
@@ -106,17 +106,17 @@ content:
           리그오브레전드 인게임 논쟁에 대한 투표 서비스
         description: | # this will include new lines to allow paragraphs
           - [CI/CD 파이프라인 구축](https://cookie-dev.tistory.com/20)<br/>
-             &emsp;❗ 새로운 기능을 개발할 때 마다 **수동으로 배포**하여 시간이 오래 걸리고 실수하는 일이 잦음<br/>
+             &emsp;❗ 새로운 기능을 개발할 때마다 **수동으로 배포**하여 시간이 오래 걸리고 실수하는 일이 잦음<br/>
              &emsp;💡 Naver Cloud Jenkins, GitHub Action을 활용한 CI/CD 파이프라인 구축
           - [세션 기반 로그인 기능 구현](https://cookie-dev.tistory.com/23)<br/>
              &emsp;❗ JWT 기반의 로그인은 보안 측면에서 신경 쓸 것이 많아 개발 속도가 느림<br/>
              &emsp;💡 세션, 웹 필터를 활용하여 로그인 기능 구현
           - [페이징 쿼리 개선](https://cookie-dev.tistory.com/31)<br/>
              &emsp;❗ 페이징 쿼리에서 테이블 풀 스캔으로 인한 지연 현상 발생<br/>
-             &emsp;💡 인덱스 생성, OFFSET → WHERE 변경으로 쿼리 속도 향상 (0.7초 → 0.003초)
+             &emsp;💡 인덱스를 생성하고 OFFSET절 → WHERE절 변경으로 쿼리 속도 향상 (0.7초 → 0.003초)
           - 멀티 모듈 및 메시지 큐를 활용한 비동기 시스템 구축<br/>
              &emsp;❗ 푸시 알림 기능의 오류가 전 시스템으로 전파되는 문제 발생<br/>
-             &emsp;💡 알림 시스템을 별도의 모듈로 분리하였으며, 시스템 간 메시지 전달을 보장하도록 RabbitMQ 사용
+             &emsp;💡 알림 시스템을 별도의 모듈로 분리하였으며 시스템 간 메시지 전달을 보장하도록 RabbitMQ 사용
 
 
   - title: Education
@@ -161,8 +161,8 @@ content:
         link_text: https://cookie-dev.tistory.com/
         caption: 2023.03 - 진행중
         description: | # this will include new lines to allow paragraphs
-          - 개발을 하며 만난 문제와 실수를 정리하여 공유하는 블로그
-          - 2023년 1월부터 월 평균 4개의 글을 꾸준히 작성 중
+          - 개발을 하며 겪은 문제와 실수를 정리하여 공유하는 블로그
+          - 2023년 1월부터 월평균 4개의 글을 꾸준히 작성 중
 
 #      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 

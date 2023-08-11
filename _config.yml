@@ -89,7 +89,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           - [동시성 이슈를 개선하기 위해 낙관적락 활용](https://cookie-dev.tistory.com/30)<br/>
              &emsp;❗ 재고가 1인 시점에 두 사용자가 동시에 예약 API를 호출하면 둘 다 예약됨<br/>
-             &emsp;💡 여러 스레드가 데이터베이스에 순차적으로 접근하도록 동시성 해결 솔루션(낙관적락/비관적락/분산락) 적용<br/>
+             &emsp;💡 여러 스레드가 데이터베이스에 순차적으로 접근하도록 `동시성 해결` 솔루션(낙관적락/비관적락/분산락) 적용<br/>
           - [연결리스트 → 배열리스트 변경으로 성능 개선](https://cookie-dev.tistory.com/27)<br/>
              &emsp;❗ 테스트용 데이터를 DB에 삽입하는 과정에서 DB 커넥션 타임아웃 발생<br/>
              &emsp;💡 크기가 1,000만 인 연결리스트를 조회하는 과정에서 시간이 지연됐으나 배열리스트로 변경하여 개선 (800초 → 0.06초)
@@ -107,7 +107,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           - [CI/CD 파이프라인 구축](https://cookie-dev.tistory.com/20)<br/>
              &emsp;❗ 새로운 기능을 개발할 때마다 **수동으로 배포**하여 시간이 오래 걸리고 실수하는 일이 잦음<br/>
-             &emsp;💡 Naver Cloud Jenkins, GitHub Action 기반의 CI/CD 파이프라인을 구축하여 빌드/배포 자동화
+             &emsp;💡 Naver Cloud Jenkins, GitHub Action 기반의 CI/CD 파이프라인을 구축하여 빌드/배포 `자동화`
           - [세션 기반 로그인 기능 구현](https://cookie-dev.tistory.com/23)<br/>
              &emsp;❗ JWT 기반의 로그인은 보안 측면에서 신경 쓸 것이 많아 개발 속도가 느림<br/>
              &emsp;💡 세션, 웹 필터를 활용하여 로그인 기능을 구현
@@ -141,7 +141,7 @@ content:
         #  Short institution or course description (optional)
         description: | # this will include new lines to allow paragraphs
           - "유지보수가 편한 코드란 무엇일까"의 답을 찾는 과정에서 참여
-          - 요구사항을 OOP로 구현하는 연습
+          - 요구사항을 `OOP`로 구현하는 연습
           - 이 교육을 계기로 OOP, 클린코드, 테스트코드에 관심을 갖고 꾸준히 학습 중
       - layout: left
         title: 삼성청년 SW 아카데미 1기

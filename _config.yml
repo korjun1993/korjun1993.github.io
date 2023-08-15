@@ -167,6 +167,14 @@ content:
         description: | # this will include new lines to allow paragraphs
           - 개발을 하며 겪은 문제와 실수를 정리하여 공유하는 블로그
           - 2023년 1월부터 월평균 4개의 글을 꾸준히 작성 중
+      - layout: left
+        title: cs-book-study
+        link: https://github.com/korjun1993/cs-book-study/issues
+        link_text: https://github.com/korjun1993/cs-book-study/
+        caption: 2023.04 - 진행중
+        description: | # this will include new lines to allow paragraphs
+          - 동료들과 함께 컴퓨터과학을 공부하고 토론하는 스터디
+          - 네트워크, 데이터베이스, HTTP 등 다양한 주제를 학습
 
 #      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 

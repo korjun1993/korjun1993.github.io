@@ -93,7 +93,8 @@ content:
         description: |
           - [CI/CD 파이프라인 구축](https://cookie-dev.tistory.com/20)<br/>
              &emsp;❗ 새로운 기능을 개발할 때마다 **수동으로 배포**하여 시간이 오래 걸리고 실수하는 일이 잦음<br/>
-             &emsp;💡 Naver Cloud Jenkins, GitHub Action 기반의 CI/CD 파이프라인을 구축하여 빌드/배포 `자동화`
+             &emsp;💡 Naver Cloud Jenkins, GitHub Action 기반의 CI/CD 파이프라인을 구축하여 빌드/배포 `자동화`<br/>
+             &emsp;💡 [네이버 클라우드 공식 블로그](https://blog.naver.com/PostView.naver?blogId=n_cloudplatform&logNo=223147683691&categoryNo=6&parentCategoryNo=6&from=thumbnailList) 기재
           - [세션 기반 로그인 기능 구현](https://cookie-dev.tistory.com/23)<br/>
              &emsp;❗ JWT 기반의 로그인은 보안 측면에서 신경 쓸 것이 많아 개발 속도가 느림<br/>
              &emsp;💡 세션, 웹 필터를 활용하여 로그인 기능을 구현<br/>

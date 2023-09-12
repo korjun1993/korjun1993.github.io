@@ -52,10 +52,9 @@ linkedin_username: korjun1993
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpeg
 about_content: |
-  - 팀에 도움이 되는 업무를 합니다. 팀원들이 수동으로 하던 작업을 자동화하는 백오피스 프로그램을 개발한 경험이 있습니다. 그 과정에서 업무 외적인 기술을 익히기도 하였습니다.
-  - 상대방의 이야기를 `경청`합니다. 반도체 설비 업체에서 근무하며 다양한 직군과 소통해왔으며, 경청과 질문을 통해 상대방의 말을 이해하고자 노력했습니다.
-  - `기록`을 중요하게 생각합니다. 개발에 관련된 다양한 주제를 [블로그](https://cookie-dev.tistory.com/)에 기록하고 있습니다.
-  - `문제 해결 능력`을 중요하게 생각합니다. 복잡한 요구사항을 구현하기 위해 `OOP` 기반으로 코드를 작성하고 있습니다.
+  - 팀에 도움이 되는 업무를 합니다. 팀원들이 수동으로 하던 작업을 자동화하는 백오피스 프로그램을 개발한 경험이 있습니다. 그 과정에서 업무 외적인 기술을 익혔습니다.
+  - 꾸준히 `기록`합니다. 개발에 관련된 다양한 주제를 [블로그](https://cookie-dev.tistory.com/)에 기록하고 있습니다. 작성 글이 [네이버 클라우드 공식 블로그](https://blog.naver.com/PostView.naver?blogId=n_cloudplatform&logNo=223147683691&categoryNo=6&parentCategoryNo=6&from=thumbnailList)에 등재된 적이 있습니다.
+  - `객체 지향 프로그래밍`을 지향합니다. 유지보수가 쉽도록 `OOP`에 입각하여 코드를 작성하고 있습니다.
   - `코드 품질`을 중요하게 생각합니다. 요구사항이 시시각각 바뀌는 상황에서 코드 품질을 보장하기 위해 `테스트코드` 작성을 고수하고 있습니다.
 
 content:
@@ -117,7 +116,7 @@ content:
         quote: >
           호텔 예약 서비스
         description: |
-          - [동시성 이슈를 개선하기 위해 낙관적락 활용](https://cookie-dev.tistory.com/30)<br/>
+          - [동시성 이슈를 개선하기 위해 분산락 활용](https://cookie-dev.tistory.com/30)<br/>
              &emsp;❗ 재고가 1인 시점에 두 사용자가 동시에 예약 API를 호출하면 둘 다 예약됨<br/>
              &emsp;💡 여러 스레드가 데이터베이스에 순차적으로 접근하도록 `동시성 해결` 솔루션(낙관적락/비관적락/분산락) 적용<br/>
           - [연결리스트 → 배열리스트 변경으로 성능 개선](https://cookie-dev.tistory.com/27)<br/>

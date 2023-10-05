@@ -86,7 +86,7 @@ content:
         title: LOL-Judge
         link: https://github.com/f-lab-edu/lol-judge
         link_text: https://github.com/f-lab-edu/lol-judge
-        caption: 2023.03 - 진행중
+        caption: 2023.06 - 진행중
         quote: >
           리그오브레전드 인게임 논쟁에 대한 투표 서비스
         description: |
@@ -112,7 +112,7 @@ content:
         title: Hotel-Java
         link: https://github.com/f-lab-edu/hotel-java
         link_text: https://github.com/f-lab-edu/hotel-java
-        caption: 2023.03 - 2022.06
+        caption: 2023.03 - 2023.06
         quote: >
           호텔 예약 서비스
         description: |

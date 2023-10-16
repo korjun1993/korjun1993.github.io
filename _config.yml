@@ -84,14 +84,11 @@ content:
       - layout: left
         border: weak
         title: LOL-Judge
-        link: http://118.67.134.233:3000/
-        additional_links:
-          - title: f-lab-edu/lol-judge
-            icon: fab fa-github
-            url: https://github.com/f-lab-edu/lol-judge
+        link_text: https://github.com/f-lab-edu/lol-judge
         caption: 2023.06 - 진행중
         quote: >
           리그오브레전드 인게임 논쟁에 대한 투표 서비스
+          http://118.67.134.233:3000/
         description: |
           - [CI/CD 파이프라인 구축](https://cookie-dev.tistory.com/20)<br/>
              &emsp;❗ 새로운 기능을 개발할 때마다 **수동으로 배포**하여 시간이 오래 걸리고 실수하는 일이 잦음<br/>

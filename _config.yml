@@ -84,9 +84,9 @@ content:
       - layout: left
         border: weak
         title: LOL-Judge
-        link_text: http://118.67.134.233:3000/
+        link: http://118.67.134.233:3000/
         additional_links:
-          - title: https://github.com/f-lab-edu/lol-judge
+          - title: f-lab-edu/lol-judge
             icon: fab fa-github
             url: https://github.com/f-lab-edu/lol-judge
         caption: 2023.06 - 진행중

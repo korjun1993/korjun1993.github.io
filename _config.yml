@@ -84,9 +84,8 @@ content:
       - layout: left
         border: weak
         title: LOL-Judge
-        link: |
-          https://github.com/f-lab-edu/lol-judge<br/>
-          http://118.67.134.233:3000/
+        link: http://118.67.134.233:3000/
+        link_text: https://github.com/f-lab-edu/lol-judge
         caption: 2023.06 - 진행중
         quote: >
           리그오브레전드 인게임 논쟁에 대한 투표 서비스

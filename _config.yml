@@ -84,6 +84,7 @@ content:
       - layout: left
         border: weak
         title: LOL-Judge
+        link: https://github.com/f-lab-edu/lol-judge
         link_text: https://github.com/f-lab-edu/lol-judge
         caption: 2023.06 - 진행중
         quote: >

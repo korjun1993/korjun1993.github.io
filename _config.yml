@@ -131,6 +131,14 @@ content:
     layout: list
     content:
       - layout: left
+        title: NEXT-STEP
+        sub_title: TDD, 클린 코드 with Kotlin
+        caption: 2023.10 ~ 진행중
+        description: |
+          - Kotlin 프로그래밍 역량을 기르기 위해 참여
+          - TDD 기반으로 요구사항을 구현하는 연습
+          - 코드리뷰를 통한 지속적인 리팩토링 수행
+      - layout: left
         title: 인프런 스프링 로드맵
         sub_title: 인프런 - 김영한의 스프링 완전 정복
         caption: 2022.11 ~ 진행중
@@ -179,7 +187,7 @@ content:
         quote: >
           현재 업무에 사용중인 기술
         description: |
-          - Java
+          - Java, Kotlin
           - Spring Boot, Spring MVC, Spring Security
           - MyBatis, JPA
           - Junit5, Mockito

@@ -102,7 +102,6 @@ content:
              &emsp;💡 푸시 알림 기능을 별도의 모듈로 분리하여 오류를 격리<br/>
              &emsp;❗ 시스템 다운으로 인해 메시지 전달이 보장되지 않는 문제 발생<br/>
              &emsp;💡 RabbitMQ를 사용하여 시스템 간 메시지 전달을 보장하도록 함
-          - 스프링 시큐리티, JWT 토큰 기반 로그인 기능 구현
       - layout: left
         border: no  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
@@ -122,7 +121,7 @@ content:
           - 도메인/외부API 포트앤어댑터 패턴 적용<br/>
              &emsp;❗ 잦은 변화가 있는 외부 API로 인해 도메인 코드가 수시로 변함<br/>
              &emsp;💡 도메인이 인터페이스에 의존하도록 하여 외부 API에 대한 종속성 제거
-
+          - 스프링 시큐리티, JWT 토큰 기반 로그인 기능 구현
   - title: Education
     layout: list
     content:

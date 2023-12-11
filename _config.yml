@@ -86,7 +86,7 @@ content:
         title: LOL-Judge
         link: https://github.com/f-lab-edu/lol-judge
         link_text: https://github.com/f-lab-edu/lol-judge
-        caption: 2023.06 - 진행중
+        caption: 2023.06 - 2023.10
         quote: >
           리그오브레전드 인게임 논쟁에 대한 투표 서비스
           <a href="http://118.67.134.233:3000/">(http://118.67.134.233:3000/)</a>
@@ -94,11 +94,6 @@ content:
           - [CI/CD 파이프라인 구축](https://cookie-dev.tistory.com/20)<br/>
              &emsp;❗ 새로운 기능을 개발할 때마다 **수동으로 배포**하여 시간이 오래 걸리고 실수하는 일이 잦음<br/>
              &emsp;💡 Naver Cloud Jenkins, GitHub Action 기반의 CI/CD 파이프라인을 구축하여 빌드/배포 `자동화`
-          - [세션 기반 로그인 기능 구현](https://cookie-dev.tistory.com/23)<br/>
-             &emsp;❗ JWT 기반의 로그인은 보안 측면에서 신경 쓸 것이 많아 개발 속도가 느림<br/>
-             &emsp;💡 세션, 웹 필터를 활용하여 로그인 기능을 구현<br/>
-             &emsp;❗ 애플리케이션 서버가 늘어나면 세션 동기화 문제 발생<br/>
-             &emsp;💡 Redis 기반 외부 세션 저장소 구축
           - [페이징 쿼리 개선](https://cookie-dev.tistory.com/31)<br/>
              &emsp;❗ 페이징 쿼리에서 테이블 풀 스캔으로 인한 지연 현상 발생<br/>
              &emsp;💡 실행 계획을 분석하여 인덱스를 타도록 쿼리를 수정하여 속도 향상 (0.7초 → 0.003초)
@@ -107,6 +102,7 @@ content:
              &emsp;💡 푸시 알림 기능을 별도의 모듈로 분리하여 오류를 격리<br/>
              &emsp;❗ 시스템 다운으로 인해 메시지 전달이 보장되지 않는 문제 발생<br/>
              &emsp;💡 RabbitMQ를 사용하여 시스템 간 메시지 전달을 보장하도록 함
+          - 스프링 시큐리티, JWT 토큰 기반 로그인 기능 구현
       - layout: left
         border: no  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
@@ -117,12 +113,12 @@ content:
         quote: >
           호텔 예약 서비스
         description: |
-          - [동시성 이슈를 개선하기 위해 분산락 활용](https://cookie-dev.tistory.com/30)<br/>
-             &emsp;❗ 재고가 1인 시점에 두 사용자가 동시에 예약 API를 호출하면 둘 다 예약됨<br/>
+          - [동시성 이슈를 개선하기 위해 비관적락 활용](https://cookie-dev.tistory.com/30)<br/>
+             &emsp;❗ 두 사용자가 재고 감소 API를 동시에 호출하면 Race-condtion 발생<br/>
              &emsp;💡 여러 스레드가 데이터베이스에 순차적으로 접근하도록 `동시성 해결` 솔루션(낙관적락/비관적락/분산락) 적용<br/>
           - [연결리스트 → 배열리스트 변경으로 성능 개선](https://cookie-dev.tistory.com/27)<br/>
              &emsp;❗ 테스트용 데이터를 DB에 삽입하는 과정에서 DB 커넥션 타임아웃 발생<br/>
-             &emsp;💡 크기가 1,000만 인 연결리스트를 조회하는 과정에서 시간이 지연됐으나 배열리스트로 변경하여 개선 (800초 → 0.06초)
+             &emsp;💡 크기가 1,000만 인 연결리스트를 조회하는 과정에서 시간이 지연 → 배열리스트로 변경하여 개선 (800초 → 0.06초)
           - 도메인/외부API 포트앤어댑터 패턴 적용<br/>
              &emsp;❗ 잦은 변화가 있는 외부 API로 인해 도메인 코드가 수시로 변함<br/>
              &emsp;💡 도메인이 인터페이스에 의존하도록 하여 외부 API에 대한 종속성 제거
@@ -133,7 +129,7 @@ content:
       - layout: left
         title: NEXT-STEP
         sub_title: TDD, 클린 코드 with Kotlin
-        caption: 2023.10 ~ 진행중
+        caption: 2023.10 ~ 2023.12
         description: |
           - Kotlin 프로그래밍 역량을 기르기 위해 참여
           - TDD 기반으로 요구사항을 구현하는 연습

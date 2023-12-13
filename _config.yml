@@ -6,8 +6,8 @@ repository: korjun1993/korjun1993.github.io
 version: 2
 
 # Personal info
-name: 김호준
-title: 서버 백엔드 엔지니어
+name: Hojun Kim
+title: Backend Developer
 email: corojoon93@gmail.com
 # email_title: Email (Email title override)
 # phone: Your phone number (optional)
@@ -52,32 +52,28 @@ linkedin_username: korjun1993
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpeg
 about_content: |
-  - 팀에 도움이 되는 업무를 합니다. 팀원들이 수동으로 하던 작업을 자동화하는 백오피스 프로그램을 개발한 경험이 있습니다. 그 과정에서 업무 외적인 기술을 익혔습니다.
-  - 꾸준히 `기록`합니다. 개발에 관련된 다양한 주제를 [블로그](https://cookie-dev.tistory.com/)에 기록하고 있습니다. 작성 글이 [네이버 클라우드 공식 블로그](https://blog.naver.com/PostView.naver?blogId=n_cloudplatform&logNo=223147683691&categoryNo=6&parentCategoryNo=6&from=thumbnailList)에 등재된 적이 있습니다.
-  - `객체 지향 프로그래밍`을 지향합니다. 유지보수가 쉽도록 `OOP`에 입각하여 코드를 작성하고 있습니다.
-  - `코드 품질`을 중요하게 생각합니다. 요구사항이 시시각각 바뀌는 상황에서 코드 품질을 보장하기 위해 `테스트코드` 작성을 고수하고 있습니다.
+  - I perform tasks that contribute to the team. I have experience developing back-office programs that automate tasks previously done manually by team members. Through this process, I acquired additional technical skills beyond my job responsibilities.
+  - I consistently keep `records`. I write about various topics related to development on my [blog](https://cookie-dev.tistory.com/).
+  - I adhere to `OOP`. I write code based on OOP to make maintenance easier.
+  - I consider `code quality` as crucial. To ensure code quality I adhere to writing `test code` consistently.
 
 content:
   - title: Experience
     layout: list
     content:
       - layout: left
-        title: 세메스
+        title: SEMES
         sub_title: SW Engineer
         caption: 2020.01 - 2022.03
         link: https://www.semes.com/
         quote: >
-          연매출 3조, 국내 최대 반도체 설비 메이커
+          The largest domestic semiconductor equipment manufacturer
         description: | # this will include new lines to allow paragraphs
-          - SCTC3.0(반도체 설비 SW 프레임워크) 기반 신규 API 개발 및 버그 개선
-             - C/C++, modbus/tcp 기반 정전기 측정 드라이버 개발
-             - 정전시 설비 입구 차단 기능 개발
-             - 검색 서비스 SQL Injection 개선
-          - 통합 테스트 시나리오 & 사용자 가이드 작성
-          - 현장 장애 발생시 파견 대응
-          - 백오피스 프로그램 개발
-          - 2020년 `우수사원` 수상
-
+          - Develop new APIs and fix bug based on C/C++, SCTC 3.0 (Semiconductor Equipment Software Framework)
+          - Develop back-office programs
+          - Write integrated test scenarios & user guides
+          - On-site troubleshooting for field incidents
+          - Excellent Employee award in 2020
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -88,20 +84,19 @@ content:
         link_text: https://github.com/f-lab-edu/lol-judge
         caption: 2023.06 - 2023.10
         quote: >
-          리그오브레전드 인게임 논쟁에 대한 투표 서비스
-          <a href="http://118.67.134.233:3000/">(http://118.67.134.233:3000/)</a>
+          Voting service for in-game disputes in League of Legends
         description: |
-          - [CI/CD 파이프라인 구축](https://cookie-dev.tistory.com/20)<br/>
-             &emsp;❗ 새로운 기능을 개발할 때마다 **수동으로 배포**하여 시간이 오래 걸리고 실수하는 일이 잦음<br/>
-             &emsp;💡 Naver Cloud Jenkins, GitHub Action 기반의 CI/CD 파이프라인을 구축하여 빌드/배포 `자동화`
-          - [페이징 쿼리 개선](https://cookie-dev.tistory.com/31)<br/>
-             &emsp;❗ 페이징 쿼리에서 테이블 풀 스캔으로 인한 지연 현상 발생<br/>
-             &emsp;💡 실행 계획을 분석하여 인덱스를 타도록 쿼리를 수정하여 속도 향상 (0.7초 → 0.003초)
-          - `비동기` 푸시 알림 시스템 구축<br/>
-             &emsp;❗ 푸시 알림 기능의 오류가 전 시스템으로 전파되는 문제 발생<br/>
-             &emsp;💡 푸시 알림 기능을 별도의 모듈로 분리하여 오류를 격리<br/>
-             &emsp;❗ 시스템 다운으로 인해 메시지 전달이 보장되지 않는 문제 발생<br/>
-             &emsp;💡 RabbitMQ를 사용하여 시스템 간 메시지 전달을 보장하도록 함
+          - [Set up CI/CD Pipeline](https://cookie-dev.tistory.com/20)<br/>
+             &emsp;❗ Manual deployment leads to errors and delays<br/>
+             &emsp;💡 Automating build/deployment using Naver Cloud Jenkins and GitHub Actions
+          - [Enhancement of Paging Queries](https://cookie-dev.tistory.com/31)<br/>
+             &emsp;❗ Paging query delays due to table full scans<br/>
+             &emsp;💡 Enhance speed via query plan analysis, index utilization (0.7 seconds → 0.003 seconds)
+          - [Building an asynchronous push notification system](https://cookie-dev.tistory.com/37)<br/>
+             &emsp;❗ System-wide error due to push notification failure<br/>
+             &emsp;💡 Isolating the push notification<br/>
+             &emsp;❗ Message delivery failure<br/>
+             &emsp;💡 Implementing RabbitMQ to ensure inter-system message delivery
       - layout: left
         border: no  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
@@ -110,40 +105,34 @@ content:
         link_text: https://github.com/f-lab-edu/hotel-java
         caption: 2023.03 - 2023.06
         quote: >
-          호텔 예약 서비스
+          Hotel reservation service
         description: |
-          - [동시성 이슈를 개선하기 위해 비관적락 활용](https://cookie-dev.tistory.com/30)<br/>
-             &emsp;❗ 두 사용자가 재고 감소 API를 동시에 호출하면 Race-condtion 발생<br/>
-             &emsp;💡 여러 스레드가 데이터베이스에 순차적으로 접근하도록 `동시성 해결` 솔루션(낙관적락/비관적락/분산락) 적용<br/>
-          - [연결리스트 → 배열리스트 변경으로 성능 개선](https://cookie-dev.tistory.com/27)<br/>
-             &emsp;❗ 테스트용 데이터를 DB에 삽입하는 과정에서 DB 커넥션 타임아웃 발생<br/>
-             &emsp;💡 크기가 1,000만 인 연결리스트를 조회하는 과정에서 시간이 지연 → 배열리스트로 변경하여 개선 (800초 → 0.06초)
-          - 도메인/외부API 포트앤어댑터 패턴 적용<br/>
-             &emsp;❗ 잦은 변화가 있는 외부 API로 인해 도메인 코드가 수시로 변함<br/>
-             &emsp;💡 도메인이 인터페이스에 의존하도록 하여 외부 API에 대한 종속성 제거
-          - 스프링 시큐리티, JWT 토큰 기반 로그인 기능 구현
+          - [Use pessimistic lock to address concurrency issue](https://cookie-dev.tistory.com/30)<br/>
+             &emsp;❗ Race-condition occurs when two users simultaneously call the inventory reduction API<br/>
+             &emsp;💡 Applying a concurrency solution (optimistic/pessimistic/distributed lock)<br/>
+          - [Performance Enhancement by Linked Lists → ArrayLists](https://cookie-dev.tistory.com/27)<br/>
+             &emsp;❗ Timeout issues with DB connections during the process of reading linked list<br/>
+             &emsp;💡 Improved by changing to ArrayList (800 seconds → 0.06 seconds)
   - title: Education
     layout: list
     content:
       - layout: left
         title: NEXT-STEP
-        sub_title: TDD, 클린 코드 with Kotlin
+        sub_title: TDD, Clean code with Kotlin
         caption: 2023.10 ~ 2023.12
         description: |
-          - Kotlin 프로그래밍 역량을 기르기 위해 참여
-          - TDD 기반으로 요구사항을 구현하는 연습
-          - 코드리뷰를 통한 지속적인 리팩토링 수행
+          - activities to enhance Kotlin programming skills
+          - Practicing implementation of requirements based on Test-Driven Development
+          - continuous refactoring through code reviews.
       - layout: left
-        title: 인프런 스프링 로드맵
-        sub_title: 인프런 - 김영한의 스프링 완전 정복
-        caption: 2022.11 ~ 진행중
-        quote: >
-        #  Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          - Spring의 동작원리와 실무스킬을 알고 싶어 수강
-          - Spring 핵심 개념, Spring MVC, 데이터 접근 원리, AOP 등을 학습
+        title: study spring roadmap
+        sub_title: Inflearn - Kim Young-han's Mastering Spring
+        caption: 2022.11 ~ 
+        description: | 
+          - activities to learn about the operational principles of Spring
+          - Learned Spring core, MVC, data access, AOP, etc
       - layout: left
-        title: 우아한테크코스 5기 프리코스
+        title: woowacourse onboarding project
         # sub_title: Qualifications (eg. BA Performing Arts)
         caption: 2022.10 ~ 2022.11
         link: https://github.com/korjun1993/woowacourse
@@ -151,28 +140,26 @@ content:
         # quote: >
         #  Short institution or course description (optional)
         description: |
-          - "유지보수가 편한 코드란 무엇일까"의 답을 찾는 과정에서 참여
-          - 요구사항을 `OOP`로 구현하는 연습
-          - 이 교육을 계기로 OOP, 클린코드, 테스트코드에 관심을 갖고 꾸준히 학습 중
+          - Joined quest for 'Code Maintainability' insights
+          - practice for Applying OOP principles to requirements
       - layout: left
-        title: 삼성청년 SW 아카데미 1기
+        title: Samsung SW Academy For Youth
         # sub_title: Qualifications (eg. BA Performing Arts)
         caption: 2018.12 ~ 2019.12
         # quote: >
         #  Short institution or course description (optional)
         description: |
-          - 실무 지식을 익히고 팀 프로젝트 경험을 쌓기 위해 참여
-          - 웹 개발에 필요한 기본 지식(Java, MySQL, HTML, Vue.js) 학습
-          - 협업 툴(GitHub, Jira, Slack)을 이용한 4번의 팀 프로젝트 수행
+          - activities for team projects experience
+          - Learned skills required for web development (Java, MySQL, HTML, Vue.js)
+          - team projects using collaboration tools (GitHub, Jira, Slack)
       - layout: left
-        title: 경기대학교
-        sub_title: 융합보안학과/컴퓨터과학과
+        title: Kyonggi University
+        sub_title: computer science
         caption: 2013.03 ~ 2019.02
         # quote: >
         #  Short institution or course description (optional)
         description: |
-          - 2017학년도 3학년 전학기 성적 우수 장학생
-          - 컴퓨터과학과 학부 연구생 (연구 주제: 블록체인)
+          - Received an academic scholarship in 2017
   
   - title: Skill
     layout: list
@@ -180,7 +167,7 @@ content:
       - layout: left
         title: Backend
         quote: >
-          현재 업무에 사용중인 기술
+          The technologies used in my work
         description: |
           - Java, Kotlin
           - Spring Boot, Spring MVC, Spring Security
@@ -201,22 +188,13 @@ content:
     layout: list
     content:
       - layout: left
-        title: 개인 블로그
+        title: Tech blog
         link: https://cookie-dev.tistory.com/
         link_text: https://cookie-dev.tistory.com/
-        caption: 2023.03 - 진행중
+        caption: 2023.03 - 
         description: |
-          - 개발을 하며 겪은 문제와 실수를 정리하여 공유하는 블로그
-          - 2023년 1월부터 월평균 4개의 글을 꾸준히 작성 중
-          - [네이버 클라우드 공식 블로그](https://blog.naver.com/PostView.naver?blogId=n_cloudplatform&logNo=223147683691&categoryNo=6&parentCategoryNo=6&from=thumbnailList) 등재
-      - layout: left
-        title: cs-book-study
-        link: https://github.com/korjun1993/cs-book-study/issues
-        link_text: https://github.com/korjun1993/cs-book-study/
-        caption: 2023.04 - 진행중
-        description: |
-          - 동료들과 함께 컴퓨터과학을 공부하고 토론하는 스터디
-          - 네트워크, 데이터베이스, HTTP 등 다양한 주제를 학습
+          - A blog where I share problems and mistakes encountered during development
+          - [My article posted on the official Naver Cloud blog.](https://blog.naver.com/PostView.naver?blogId=n_cloudplatform&logNo=223147683691&categoryNo=6&parentCategoryNo=6&from=thumbnailList)
 
 #      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 

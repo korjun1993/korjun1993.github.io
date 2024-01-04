@@ -1,94 +1,172 @@
-# 码志
+# modern-resume-theme [![Gem Version](https://badge.fury.io/rb/modern-resume-theme.svg)](https://badge.fury.io/rb/modern-resume-theme) ![CI workflow](https://github.com/sproogen/modern-resume-theme/workflows/CI%20workflow/badge.svg?branch=master)
 
-我的个人博客：<https://mazhuang.org>，欢迎 Star 和 Fork。
+*A modern simple static resume template and theme. Powered by Jekyll and GitHub pages.*  
+*Host your own resume on GitHub for **free!***
 
-## 概览
+[View Demo](https://sproogen.github.io/modern-resume-theme/)
 
-<!-- vim-markdown-toc GFM -->
+----
 
-* [效果预览](#效果预览)
-* [Fork 指南](#fork-指南)
-* [使用文档](#使用文档)
-* [经验与思考](#经验与思考)
-* [联系我](#联系我)
-* [致谢](#致谢)
+## Announcements
 
-<!-- vim-markdown-toc -->
+ - **Nov 2020** - Content configuration version 2 released. Added a new more configurable way of adding data to the resume. Add as many content sections as you like in what ever order you want. Currently just *text* and *list* but future categories coming soon.
+Full backwards compatibilty with version 1 remains and the documentation for version 1 can be found [here (Version 1 Readme)](https://github.com/sproogen/modern-resume-theme/blob/1.x/README.md).
 
-## 效果预览
+ - **Dec 2019** - Now includes **Dark Mode**
 
-**[在线预览 &rarr;](https://mazhuang.org)**
+----
 
-![screenshot home](https://mazhuang.org/assets/images/screenshots/home.png)
+![img](screenshot.png)
 
-## Fork 指南
+Thank you for checking out my resume theme / template. If you have any feedback or suggestions for things I can add please let me know by by raising an [issue](https://github.com/sproogen/modern-resume-theme/issues/new/choose), I'm always happy to help.
 
-Fork 本项目之后，还需要做一些事情才能让你的页面「正确」跑起来。
+I always enjoy seeing how people are using my creations and if you would like to say thanks feel free to [buy me a coffee (buymeacoffee.com/vJ6HfLu)](https://buymeacoff.ee/vJ6HfLu).
 
-1. 正确设置项目名称与分支。
+If you would like to see how I am using this then you can view my resume [here (jameswgrant.co.uk)](http://www.jameswgrant.co.uk/) and find the code [here (sproogen/jameswgrant)](https://github.com/sproogen/jameswgrant), hopefully this might help you.
 
-   按照 GitHub Pages 的规定，名称为 `username.github.io` 的项目的 master 分支，或者其它名称的项目的 gh-pages 分支可以自动生成 GitHub Pages 页面。
+You can view the project [roadmap here](https://github.com/sproogen/modern-resume-theme/projects/1).
 
-2. 修改域名。
+----
 
-   如果你需要绑定自己的域名，那么修改 CNAME 文件的内容，并参考 [配置 GitHub Pages 站点的自定义域](https://docs.github.com/cn/pages/configuring-a-custom-domain-for-your-github-pages-site) 做好配置；如果不需要绑定自己的域名，那么删掉 CNAME 文件。
+## Installation & setup guide
+This template is designed to be hosted using GitHub pages and so that's what these instructions will cover. If you plan on hosting it seperately then there might be some extra steps that we wont cover.
 
-3. 修改配置。
+Before starting it might be useful to familiarise yourself with [Jekyll](https://jekyllrb.com/docs/home/), [Markdown](https://www.markdownguide.org/getting-started) and [GitHub pages](https://pages.github.com/).
 
-   网站的配置基本都集中在 \_config.yml 文件中，将其中与个人信息相关的部分替换成你自己的，比如网站的 url、title、subtitle 和第三方评论模块的配置等。
+### Step 1 - GitHub
+Start by creating an account on [GitHub](https://github.com/join)
 
-   **评论模块：** 目前支持 disqus、gitment、gitalk、utterances、beaudar 和 giscus，选用其中一种就可以了，推荐使用 giscus。它们各自的官方配置指南链接在 \_config.yml 文件的 Comments 一节里都贴出来了，请参考官方指南配置。
+### Step 2 - Create Repository
+Create a repository on GitHub to hold your files and host your resume. You can find out how to do that [here](https://pages.github.com/)
 
-   **注意：** 如果使用 disqus，因为 disqus 处理用户名与域名白名单的策略存在缺陷，请一定将 disqus.username 修改成你自己的，否则请将该字段留空。我对该缺陷的记录见 [Issues#2][3]。
+### Step 3 - Download Resume Template
+Download and extract the following zip into the git repository you have just created. [resume-template.zip](https://github.com/sproogen/modern-resume-theme/archive/gh-pages.zip)
 
-4. 删除我的文章与图片。
+### Step 4 - Push it
+Commit and push the resume template to github
+```
+$ git add --all
+$ git commit -m "Initial resume setup"
+$ git push -u origin master
+```
+### Step 5 - See it
+You should now be able to see the demo resume template using this theme at `[your-username].github.io`
 
-   如下文件夹中除了 template.md 文件外，都可以全部删除，然后添加你自己的内容。
+----
 
-   * \_posts 文件夹中是我已发布的博客文章。
-   * \_drafts 文件夹中是我尚未发布的博客文章。
-   * \_wiki 文件夹中是我已发布的 wiki 页面。
-   * \_fragments 文件夹中是我已发布的短文片段。
-   * images 文件夹中是我的文章和页面里使用的图片。
+## Usage
 
-5. 修改「关于」页面。
+So now you will be able to see the demo template at your github URL. You can can edit the yml files and replace the demo content with your own. Hopefully it will be fairly simple to work out where all the content goes, but here is a quick overview.
 
-   pages/about.md 文件内容对应网站的「关于」页面，里面的内容多为个人相关，将它们替换成你自己的信息，包括 \_data 目录下的 skills.yml 和 social.yml 文件里的数据。
+### `_config.yml`
+This will contain all the of the main configuration for your resume such as your name, email, social media links and about me content. It also contains all the content for your resume.  
+A full example of the _config.yml can be found [here](https://github.com/sproogen/modern-resume-theme/blob/master/_config.yml)
 
-   skills.yml 和 social.yml 里内容的含义可以参考：[_data 目录下的 yml 文件内容含义](https://mazhuang.org/2020/05/03/blog-template-qna/#_data-%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84-yml-%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E5%90%AB%E4%B9%89)。
+#### Content
+The main content for you resume will all come under the content property in the `_config.yml` file. This can be quite complex and a good understanding on [YAML](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html) will be helpful here.
 
-## 使用文档
+Content will contain an array of sections, there are currently 2 types of layouts for content sections, text and list.
 
-- [本博客模板常见问题 Q & A](https://mazhuang.org/2020/05/03/blog-template-qna/)。
+**text** is a basic layout that contains markdown content.  
+**list** is a the standard layout that is used for things like *Education* and *Experience*.
 
-- 在本地预览博客效果可以参考 [Setting up your Pages site locally with Jekyll][2]。
+Below is a the full list of content options.
+```
+content:
+  - title: Section Name
+    layout: list (options: list, text)
+    content:
+      - layout: left (options: left, right, top, top-right, top-middle)(default: left)
+        title: Name of item (eg. Company or Project name)
+        sub_title: Sub title (eg. Qualification or Job title)(optional)
+        caption: Item caption (eg. Employment or course dates)(optional)
+        link: Web link (eg. https://sproogen.github.io/modern-resume-theme)(optional)
+        link_text: Text for link (optional: without this link will show URL as link text)
+        additional_links: (optional)
+          - title: Link name
+            icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+            url: Link url (eg. https://google.com)
+        quote: >
+          Short overview or quote for the item
+        description: | # this will include new lines to allow paragraphs
+          Main content area for the list item.
+  - title: Section Name
+    layout: text (options: list, text)
+    content: | # this will include new lines to allow paragraphs
+      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
-## 经验与思考
+      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+```
 
-* 排版建议遵照一定的规范，推荐 [中文文案排版指北（简体中文版）][1]。
+***Note:** The description or content areas (fields starting with `| #`) use markdown, this means that you have the ability to format the section in many different ways and add things such as images, code & syntax highlighting and tables. You can find a good [Markdown cheatsheet here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)*
 
-* 简约，尽量每个页面都不展示多余的内容。
+#### Additional links
+If you would like to add more than the predefined social links in the config file, then you can use the `additional_links` field to add as many additional links with urls and font awesome icons as you wish.
 
-* 有时一图抵千言，有时可能只会拖慢网页加载速度。
+#### Dark Mode
+Dark mode is configured via `_config.yml`  
+```
+darkmode: true (options: true, false, never)
+```
+When dark mode is `true` the site will show the dark theme for everyone  
+When dark mode is `false` the site will not show the dark theme, but it will still respect the users device preferences  
+When dark mode is `never` the site will never be shown in the dark theme
 
-* 言之有物，不做无痛之呻吟。
+#### Heading Anchors
+You can link to section titles using a Markdown anchor link, e.g.: `[About me](#about-me)`. The link after the `#` is the slug version of the title.
 
-* 如果写技术文章，那先将技术原理完全理清了再开始写，一边摸索技术一边组织文章效率较低。
+### `assets/main.scss`
+Add any css changes or additions you want to make here after the line `@import 'modern-resume-theme';`
 
-* 杜绝难断句、难理解的长句子，如果不能将其拆分成几个简洁的短句，说明脑中的理解并不清晰。
+----
 
-* 可以学习一下那些高质量的博主，他们的行文，内容组织方式，有什么值得借鉴的地方。
+## Running locally
 
-## 联系我
+Before you start make sure you have *Ruby* and the gems for *Jekyll* installed locally. You can find out how to do that [here](https://jekyllrb.com/docs/installation/).
 
-如果对本博客模板或者内容有任何建议，可以通过 [Issues](https://github.com/mzlogin/mzlogin.github.io/issues) 或者微信公众号「闷骚的程序员」与我取得联系。
+1. Clone your resume repository locally *(if you haven't already)*
+2. `cd [your-repository-name]`
+3. `bundle install`
+4. `bundle exec jekyll serve`
+5. Open your browser to `http://localhost:4000`
 
-<img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/>
+Any changes you make will automatically build and you will be able to see these by refreshing your browser.
 
-## 致谢
+*Note: You will need to re-run `bundle exec jekyll serve` to see changes made in `_config.yml`.*
 
-本博客外观基于 [DONGChuan](https://dongchuan.github.io) 修改，感谢！
+----
 
-[1]: https://github.com/mzlogin/chinese-copywriting-guidelines
-[2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
-[3]: https://github.com/mzlogin/mzlogin.github.io/issues/2
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/sproogen/modern-resume-theme. You can view our full guide to contributing [here](https://github.com/sproogen/modern-resume-theme/blob/master/CONTRIBUTING.md)
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+----
+
+## Development
+
+### Locally
+
+Before you start make sure you have *Ruby* and the gems for *Jekyll* installed locally. You can find out how to do that [here](https://jekyllrb.com/docs/installation/).
+
+*Note: You will need version `1.15.2` of bundler, as this is the only version that Heroku supports.*
+
+1. Fork and or clone this repository locally
+2. `cd modern-resume-theme`
+3. `bundle install`
+4. `bundle exec jekyll serve`
+5. Open your browser to `http://localhost:4000`
+
+Any changes you make will automatically build and you will be able to see these by refreshing your browser. To find out more about *Jekyll* take a look [here](https://jekyllrb.com/docs/usage/).
+
+***Note:** You will need to re-run `bundle exec jekyll serve` to see changes made in `_config.yml`.*
+
+### Docker
+
+If you have docker installed you can simply run `docker-compose up` to launch the site in a container, it will then be hosted at `http://localhost:4000`
+
+----
+
+## License
+
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

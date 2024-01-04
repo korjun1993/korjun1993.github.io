@@ -1,0 +1,175 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: https://korjun1993.github.io
+date_format: "ordinal"
+title: 쿠키의 개발 블로그
+subtitle: "👨🏻‍💻"
+description: "korjun1993의 개인 블로그"
+keywords: 쿠키, korjun1993, 개발
+timezone: Asia/Seoul
+encoding: "utf-8"
+# 페이지 왼쪽 하단에 표시
+since: 2024
+repository: korjun1993/korjun1993.github.io
+cdn:
+    jsdelivr:
+        enabled: false
+# 선택요소
+components:
+    share:
+        enabled: false
+        hide-platforms: # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
+    busuanzi:
+        enabled: false
+        start_date: 2020-05-03
+    side_bar_repo:
+        enabled: true
+        limit: 5
+    word_count:
+        enabled: true
+    # 페이지 오른쪽 상단 및 '정보' 페이지의 QR 코드
+    # 사진 경로: assets/images/qrcode.jpg
+    qrcode:
+        enabled: false
+        image_alt: QRcode
+    # 위키 색인 방법 - 목록형（list）/카테고리형（cate）
+    wiki:
+        view: list
+    fancybox:
+        enabled: false
+# 페이지 콘텐츠 압축
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+highlight_theme: github
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: 호준
+organization: 
+organization_url: 
+github_username: korjun1993
+location: Seoul, Korea
+email: corojoon93@gmail.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /categories/
+    label: Categories
+
+  -
+    href: /archives/
+    label: Archives
+    mobile-hidden: true
+
+  -
+    href: /open-source/
+    label: Projects
+    mobile-hidden: true
+
+  -
+    href: /about/
+    label: About
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+plugins:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+    fragments:
+        output: true
+        permalink: /fragment/:path/
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk, utterances, beaudar, giscus
+comments_provider: giscus
+# !!!Important!!! Please modify infos below to yours
+# disqus 配置参考：https://disqus.com
+disqus:
+    username: 
+# gitment 配置参考：https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: mzlogin
+    repo: blog-comments
+    oauth:
+        client_id: d2e1cbbd298958076462
+        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+# gitalk 配置参考：https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: mzlogin
+    repo: blog-comments
+    clientID: d2e1cbbd298958076462
+    clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+# utterances 配置参考：https://utteranc.es/
+utterances:
+    repo: mzlogin/blog-comments
+# beaudar 配置参考：https://beaudar.lipk.org/
+beaudar:
+    repo: mzlogin/blog-comments
+# giscus 配置参考：https://giscus.app/zh-CN
+giscus:
+    repo: mzlogin/blog-comments
+    repo-id: MDEwOlJlcG9zaXRvcnk5MzEyNzkxNw==
+    category: Announcements
+    category-id: DIC_kwDOBY0E7c4CRtg9
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : false
+
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # 是否支持全文搜索
+    fulltext: false
+    # 最多显示多少条搜索结果
+    limit: 10
+
+# ---------------- #
+#      Google      #
+# ---------------- #
+google:
+    analytics_id: # G-20FLEG5Q2W
+    adsense:
+        enabled: false
+        footer: false
+        sidebar: false
+        sidebar-detail: false
+        content_header: false
+        content_footer: false

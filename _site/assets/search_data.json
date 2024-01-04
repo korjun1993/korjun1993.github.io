@@ -1,0 +1,92 @@
+
+
+[
+  
+  
+    {
+      "title"    : "页面没有找到",
+      "url"      : "http://localhost:4000/404.html",
+      "keywords" : "404"
+    } ,
+  
+  
+  
+    {
+      "title"    : "About",
+      "url"      : "http://localhost:4000/about/",
+      "keywords" : "Zhuang Ma, 马壮"
+    } ,
+  
+  
+  
+    {
+      "title"    : "归档",
+      "url"      : "http://localhost:4000/archives/",
+      "keywords" : "归档"
+    } ,
+  
+  
+  
+    {
+      "title"    : "Categories",
+      "url"      : "http://localhost:4000/categories/",
+      "keywords" : "分类"
+    } ,
+  
+  
+  
+    {
+      "title"    : "捐助 / Donate",
+      "url"      : "http://localhost:4000/donate/",
+      "keywords" : "Donate"
+    } ,
+  
+  
+  
+  
+  
+    {
+      "title"    : "mindmap",
+      "url"      : "http://localhost:4000/mindmap-viewer/",
+      "keywords" : "mindmap"
+    } ,
+  
+  
+  
+    {
+      "title"    : "Open Source Projects",
+      "url"      : "http://localhost:4000/open-source/",
+      "keywords" : "开源,open-source,GitHub,开源项目"
+    } ,
+  
+  
+  
+  
+  
+    {
+      "title"    : "Wiki",
+      "url"      : "http://localhost:4000/wiki/",
+      "keywords" : "维基, Wiki"
+    } ,
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+    {
+      "title"    : "순열",
+      "category" : "Algorithm",
+      
+      "url"      : "http://localhost:4000/2011/11/20/permutation/",
+      "keywords" : "순열, 완전탐색"
+    } 
+  
+]
+

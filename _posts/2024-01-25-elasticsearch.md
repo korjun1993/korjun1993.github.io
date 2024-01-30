@@ -143,6 +143,53 @@ POST /books/book
 {"_index":"books","_type":"book","_id": "1-jtEDHgSHaoKrxK-oYDVw","_version":1,"created":true}
 ```
 
+### 2. 데이터 삭제
+
+삭제는 도큐먼트, 타입, 인덱스 단위로 삭제할 수 있으며, DELETE 메서드를 이용한다.
+
+```
+DELETE /books/book/1
+
+{"found":true,"_index":"books","_type":"book","_id":"1","_version":3}
+```
+
+삭제한 도큐먼트를 조회하면 결과에 found:false 값이 표시되고, 도큐먼트를 찾을 수 없음을 확인할 수 있다.
+
+```
+GET /books/book/1
+
+{"_index":"books","_type":"book","_id":"1","found":false}
+```
+
+도큐먼트 데이터를 삭제하더라도 도큐먼트의 메타 정보는 여전히 남아있다.
+도큐먼트의 삭제는 도큐먼트가 실제로 삭제되는 것이 아니라 도큐먼트의 _source에 입력된 데이터 값이 빈 값으로 업데이트되고
+검색되지 않게 상태가 변경되는 것으로 이해하는 것이 편하다.
+
+
+DELETE 메서드를 사용한 삭제 명령은 타입과 인덱스 단위로도 사용할 수 있다.
+데이터를 삭제할 때 명령에 /books/book과 같이 입력하면 /books/book 타입에 있는 모든 도큐먼트가 일괄 삭제된다.
+이때는 도큐먼트의 메타 정보까지 모두 삭제된다.
+
+
+### 3. 데이터 업데이트
+
+엘라스틱서치에서는 입력된 도큐먼트를 수정할 수 있는 _update API를 제공한다.
+도큐먼트 데이터의 업데이트는 _update API의 매개 변수인 doc와 script를 이용해서 데이터를 제어할 수 있다.
+
+- doc: 도큐먼트에 새로운 필드를 추가하거나 기존 필드 값을 변경할 때
+- script: 복잡한 프로그래밍 기법을 사용해서 입력된 내용에 따라 필드의 값을 변경할 때
+
+_update API는 POST 메서드를 사용하며, 다음 URI처럼 doc 매개 변수를 사용해서 도큐먼트에 category 필드를 추가할 수 있다.
+
+```
+POST my_index/_update/1
+{
+  "doc": {
+    "category": "ICT"
+  }
+}
+```
+
 ## 참고 문서
 
 - https://lucene.apache.org/core/3_0_3/fileformats.html#Index%20File%20Formats

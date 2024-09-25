@@ -77,7 +77,7 @@ content:
     content:
       - layout: left
         border: weak
-        title: 중고나라 검색 API 개발
+        title: 중고나라 검색 클러스터 운영
         caption: 2024.09 - 2024.10
         description: |
           - 엘라스틱서치 클러스터 퍼포먼스 튜닝<br/>

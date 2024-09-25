@@ -9,38 +9,16 @@ version: 2
 name: 김호준
 title: 서버 백엔드 엔지니어
 email: corojoon93@gmail.com
-# email_title: Email (Email title override)
-# phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
 website: https://cookie-dev.tistory.com
-# website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: never
 
 # Social links
-# twitter_username: jekyllrb
 github_username:  korjun1993
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
 facebook_username: corojoon93
-# flickr_username: jekyll
-# instagram_username: jekyll
 linkedin_username: korjun1993
-# xing_username: jekyll
-# pinterest_username: jekyll
 # youtube_username: jekyll
-# orcid_username: 0000-0000-0000-0000
-# googlescholar_username: D847cGsAAAAJ
-
-# Additional icon links
-# additional_links:
-# - title: Link name
-#  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#  url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
@@ -52,15 +30,31 @@ linkedin_username: korjun1993
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpeg
 about_content: |
-  - 팀에 도움이 되는 업무를 합니다. 팀원들이 수동으로 하던 작업을 자동화하는 백오피스 프로그램을 개발한 경험이 있습니다. 그 과정에서 업무 외적인 기술을 익혔습니다.
-  - 꾸준히 `기록`합니다. 개발에 관련된 다양한 주제를 [블로그](https://cookie-dev.tistory.com/)에 기록하고 있습니다. 작성 글이 [네이버 클라우드 공식 블로그](https://blog.naver.com/PostView.naver?blogId=n_cloudplatform&logNo=223147683691&categoryNo=6&parentCategoryNo=6&from=thumbnailList)에 등재된 적이 있습니다.
+  - 팀에 도움이 되는 업무를 합니다. 팀원들이 수동으로 하던 작업을 자동화하는 백오피스 프로그램을 개발한 경험이 있습니다.
+  - 꾸준히 `기록`합니다. 개발에 관련된 주제의 글을 [블로그](https://cookie-dev.tistory.com/)에 기록하고 있습니다. [네이버 클라우드 공식 블로그](https://blog.naver.com/PostView.naver?blogId=n_cloudplatform&logNo=223147683691&categoryNo=6&parentCategoryNo=6&from=thumbnailList)에 등재된 적이 있습니다.
   - `객체 지향 프로그래밍`을 지향합니다. 유지보수가 쉽도록 `OOP`에 입각하여 코드를 작성하고 있습니다.
-  - `코드 품질`을 중요하게 생각합니다. 요구사항이 시시각각 바뀌는 상황에서 코드 품질을 보장하기 위해 `테스트코드` 작성을 고수하고 있습니다.
+  - `테스트코드` 작성을 고수하고 있습니다.
 
 content:
   - title: Experience
     layout: list
     content:
+      - layout: left
+        title: 중고나라
+        sub_title: Search Engineer
+        caption: 2024.01 - 재직중
+        link: https://web.joongna.com/
+        quote: >
+          C2C 중고 상품 거래 플랫폼
+        description: |
+          - 엘라스틱서치 클러스터 모니터링 및 퍼포먼스 튜닝
+          - 검색 API 서버 모니터링 및 장애 대응
+          - 색인 파이프라인 구축
+          - 검색 API 개발
+            - 상품 검색 API
+            - 검색어 자동완성 API
+            - 지역기반 상품검색 API
+            - 쿠폰 검색 API
       - layout: left
         title: 세메스
         sub_title: SW Engineer
@@ -68,7 +62,7 @@ content:
         link: https://www.semes.com/
         quote: >
           연매출 3조, 국내 최대 반도체 설비 메이커
-        description: | # this will include new lines to allow paragraphs
+        description: |
           - SCTC3.0(반도체 설비 SW 프레임워크) 기반 신규 API 개발 및 버그 개선
              - C/C++, modbus/tcp 기반 정전기 측정 드라이버 개발
              - 정전시 설비 입구 차단 기능 개발
@@ -78,9 +72,18 @@ content:
           - 백오피스 프로그램 개발
           - 2020년 `우수사원` 수상
 
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Projects
+    layout: list
     content:
+      - layout: left
+        border: weak
+        title: 중고나라 검색 API 개발
+        caption: 2024.09 - 2024.10
+        description: |
+          - 엘라스틱서치 클러스터 퍼포먼스 튜닝<br/>
+             &emsp;❗ 엘라스틱서치 데이터노드의 CPU High 발생<br/>
+             &emsp;💡 슬로우쿼리 로깅 및 프로파일링을 통해 쿼리 로직 개선<br/>
+             &emsp;💡 esrally 벤치마킹 수행을 통해 적절한 샤드 크기 탐색
       - layout: left
         border: weak
         title: LOL-Judge
@@ -118,41 +121,9 @@ content:
           - [연결리스트 → 배열리스트 변경으로 성능 개선](https://cookie-dev.tistory.com/27)<br/>
              &emsp;❗ 테스트용 데이터를 DB에 삽입하는 과정에서 DB 커넥션 타임아웃 발생<br/>
              &emsp;💡 연결리스트를 직렬화할 때 시간 지연, 배열리스트로 변경 (800초 → 0.06초)
-          - 도메인/외부API 포트앤어댑터 패턴 적용<br/>
-             &emsp;❗ 잦은 변화가 있는 외부 API로 인해 도메인 코드가 수시로 변함<br/>
-             &emsp;💡 도메인이 인터페이스에 의존하도록 하여 외부 API에 대한 종속성 제거
   - title: Education
     layout: list
     content:
-      - layout: left
-        title: NEXT-STEP
-        sub_title: TDD, 클린 코드 with Kotlin
-        caption: 2023.10 ~ 2023.12
-        description: |
-          - Kotlin 프로그래밍 역량을 기르기 위해 참여
-          - TDD 기반으로 요구사항을 구현하는 연습
-          - 코드리뷰를 통한 지속적인 리팩토링 수행
-      - layout: left
-        title: 인프런 스프링 로드맵
-        sub_title: 인프런 - 김영한의 스프링 완전 정복
-        caption: 2022.11 ~ 진행중
-        quote: >
-        #  Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          - Spring의 동작원리와 실무스킬을 알고 싶어 수강
-          - Spring 핵심 개념, Spring MVC, 데이터 접근 원리, AOP 등을 학습
-      - layout: left
-        title: 우아한테크코스 5기 프리코스
-        # sub_title: Qualifications (eg. BA Performing Arts)
-        caption: 2022.10 ~ 2022.11
-        link: https://github.com/korjun1993/woowacourse
-        link_text: https://github.com/korjun1993/woowacourse
-        # quote: >
-        #  Short institution or course description (optional)
-        description: |
-          - "유지보수가 편한 코드란 무엇일까"의 답을 찾는 과정에서 참여
-          - 요구사항을 `OOP`로 구현하는 연습
-          - 이 교육을 계기로 OOP, 클린코드, 테스트코드에 관심을 갖고 꾸준히 학습 중
       - layout: left
         title: 삼성청년 SW 아카데미 1기
         # sub_title: Qualifications (eg. BA Performing Arts)
@@ -167,8 +138,6 @@ content:
         title: 경기대학교
         sub_title: 융합보안학과/컴퓨터과학과
         caption: 2013.03 ~ 2019.02
-        # quote: >
-        #  Short institution or course description (optional)
         description: |
           - 2017학년도 3학년 전학기 성적 우수 장학생
   
@@ -180,17 +149,18 @@ content:
         quote: >
           현재 업무에 사용중인 기술
         description: |
-          - Java, Kotlin
+          - Java
           - Spring Boot, Spring MVC, Spring Security
           - MyBatis, JPA
           - Junit5, Mockito
           - gradle
-          - Intellij, Visual Studio Code
+          - Intellij
       - layout: left
         title: DevOps
         description: |
+          - Elasticsearch
           - MySQL
-          - RabbitMQ
+          - AWS
           - Git/GitHub
           - macOS, Ubuntu
 
@@ -205,26 +175,19 @@ content:
         caption: 2023.03 - 진행중
         description: |
           - 개발을 하며 겪은 문제와 실수를 정리하여 공유하는 블로그
-          - 2023년 1월부터 월평균 4개의 글을 꾸준히 작성 중
           - [네이버 클라우드 공식 블로그](https://blog.naver.com/PostView.naver?blogId=n_cloudplatform&logNo=223147683691&categoryNo=6&parentCategoryNo=6&from=thumbnailList) 등재
       - layout: left
-        title: cs-book-study
-        link: https://github.com/korjun1993/cs-book-study/issues
-        link_text: https://github.com/korjun1993/cs-book-study/
-        caption: 2023.04 - 진행중
+        title: Elasticsearch bug report
+        link: https://discuss.elastic.co/t/elasticsearch-java-client-throws-exception-when-deserialize-hotthreads-response/365144
+        link_text: https://discuss.elastic.co/t/elasticsearch-java-client-throws-exception-when-deserialize-hotthreads-response/365144
+        caption: 2024.08
         description: |
-          - 동료들과 함께 컴퓨터과학을 공부하고 토론하는 스터디
-          - 네트워크, 데이터베이스, HTTP 등 다양한 주제를 학습
+          - Elasticsearch Java API Client 의 Hot thread 조회 기능 버그 리포트  
 
 #      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
-
-# Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
 sass:
   sass_dir: _sass

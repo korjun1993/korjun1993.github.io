@@ -177,12 +177,12 @@ content:
           - 개발을 하며 겪은 문제와 실수를 정리하여 공유하는 블로그
           - [네이버 클라우드 공식 블로그](https://blog.naver.com/PostView.naver?blogId=n_cloudplatform&logNo=223147683691&categoryNo=6&parentCategoryNo=6&from=thumbnailList) 등재
       - layout: left
-        title: Elasticsearch bug report
+        title: Elasticsearch
         link: https://discuss.elastic.co/t/elasticsearch-java-client-throws-exception-when-deserialize-hotthreads-response/365144
-        link_text: https://discuss.elastic.co/t/elasticsearch-java-client-throws-exception-when-deserialize-hotthreads-response/365144
+        link_text: Elasticsearch discuss website
         caption: 2024.08
         description: |
-          - Elasticsearch Java API Client 의 Hot thread 조회 기능 버그 리포트  
+          - Elasticsearch Java API Client 의 Hot thread 조회 기능 버그 리포트
 
 #      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 

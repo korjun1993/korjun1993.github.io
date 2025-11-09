@@ -1,19 +1,11 @@
-- name: Software Engineer Keywords
+- name: search engineer
   keywords:
       - Java
-      - C++
-      - Python
-      - Design Patterns
-
-- name: Mobile Developer Keywords
+      - Spring Boot, MVC, Webflux
+      - Elasticsearch
+      - MySQL
+      - MyBatis
+- name: software engineer
   keywords:
-      - Android
-      - Reverse Engineering
-
-- name: Windows Developer Keywords
-  keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - C/C++
+      - modbus/tcp

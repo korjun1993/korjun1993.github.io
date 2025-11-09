@@ -14,7 +14,7 @@
     {
       "title"    : "About",
       "url"      : "http://localhost:4000/about/",
-      "keywords" : "Zhuang Ma, 马壮"
+      "keywords" : "Hojun Kim"
     } ,
   
   
@@ -34,22 +34,6 @@
     } ,
   
   
-  
-    {
-      "title"    : "捐助 / Donate",
-      "url"      : "http://localhost:4000/donate/",
-      "keywords" : "Donate"
-    } ,
-  
-  
-  
-  
-  
-    {
-      "title"    : "mindmap",
-      "url"      : "http://localhost:4000/mindmap-viewer/",
-      "keywords" : "mindmap"
-    } ,
   
   
   
@@ -81,11 +65,11 @@
 
   
     {
-      "title"    : "순열",
-      "category" : "Algorithm",
+      "title"    : "Lucene 공식문서 읽기",
+      "category" : "Lucene",
       
-      "url"      : "http://localhost:4000/2011/11/20/permutation/",
-      "keywords" : "순열, 완전탐색"
+      "url"      : "http://localhost:4000/2024/01/17/lucene/",
+      "keywords" : "Lucene, Elasticsearch, Solo"
     } 
   
 ]

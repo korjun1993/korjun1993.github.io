@@ -1,3 +1,11 @@
+---
+layout: post
+title: capacity planning
+categories: Elasticsearch
+description: 실무 경험 - 샤드 수 조정 실험
+keywords: Elasticsearch
+---
+
 ## 목적
 
 - 상품 인덱스 샤드 구성을 최적화한다.

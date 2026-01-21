@@ -1,3 +1,11 @@
+---
+layout: post
+title: 검색 속도 개선하기
+categories: Elasticsearch
+description: 실무 경험 - 검색 쿼리 개선
+keywords: Elasticsearch
+---
+
 ## 목표
 
 닉네임을 가게 검색 API를 개선한다.
@@ -185,4 +193,4 @@ N-gram 적용 전/후 샤드의 용량은 다음과 같다.
 - “12” 검색: 125ms → 30ms
 - “신발” 검색: 88ms → 4.7ms
 
-<img src="/images/posts/2024-11-12-쿼리개선-1.png" width="691" alt="exp2_node_cpu"/>
+<img src="/images/posts/2024-11-12-store-query-1.png" width="691" alt="exp2_node_cpu"/>

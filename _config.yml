@@ -86,7 +86,7 @@ content:
              &emsp;💡 메인 화면 내 비효율적인 검색 로직 제거로 전반적인 시스템 부하 감소
           - 상품 인덱스 샤드 튜닝<br/>
              &emsp;❗ 상품 샤드의 크기 지속 증가에 따른 튜닝 검토 필요<br/>
-             &emsp;💡 샤드 수 변경 실험을 통해 적절한 샤드 개수 확인
+             &emsp;💡 [샤드 수 변경 실험을 통해 적절한 샤드 개수 확인](https://korjun1993.github.io/2024/11/22/capacity-planning/)
       - layout: left
         border: weak
         title: SCTC 3.0 (반도체 설비 제어 프로그램)

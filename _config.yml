@@ -30,9 +30,10 @@ linkedin_username: korjun1993
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpeg
 about_content: |
-  - 팀에 도움이 되는 업무를 합니다.
-  - 기술의 동작원리와 배경을 이해하는 개발자입니다.
-  - 사용자에게 가치를 주는 프로덕트를 만듭니다. 
+  - 기술의 동작 원리를 깊이 있게 이해하고 활용하는 개발자입니다.
+  - 사용자에게 실질적인 가치를 전하는 프로덕트를 만듭니다.
+  - 개인의 성과보다 팀에 기여하는 업무의 우선순위를 고민합니다.
+  - 적극적인 소통을 바탕으로 동료와 협업하며 최선의 결과를 도출합니다.
 
 content:
   - title: Experience
@@ -78,7 +79,7 @@ content:
           - 검색 성능 개선<br/>
              &emsp;❗ 간헐적인 Elasticsearch Latency 증가 현상<br/>
              &emsp;💡 슬로우 쿼리 로깅 시스템 구축을 통해 병목 쿼리 식별<br/>
-             &emsp;💡 부적합 검색어 사전 차단 로직 도입 (슬로우 쿼리 97% 감소)
+             &emsp;💡 부적합 검색어 사전 차단 로직 도입 (슬로우 쿼리 97% 감소)<br/>
              &emsp;💡 [유저 검색 쿼리 개선을 통한 Latency 개선](https://korjun1993.github.io/2024/11/12/store-query/) (110ms → 40ms)
           - 검색클러스터 부하 개선<br/>
              &emsp;❗ 엘라스틱서치 데이터노드의 CPU High 발생<br/>
@@ -92,11 +93,11 @@ content:
         title: SCTC 3.0 (반도체 설비 제어 프로그램)
         caption: 2020.01 - 2022.03
         description: |
-          - 검색 서비스 SQL Injection 개선
-             &emsp;❗ 검색 기능에서 특수문자 포함시 검색 오류 발생 
-             &emsp;💡 검색어 escape 처리를 통해 버그 개선 
-          - 모듈 간 네트워크 바이트 오더 불일치 문제 해결
-             &emsp;❗ 정전기 측정 드라이버 개발 과정에서 모듈 간 통신 오류 발생
+          - 검색 서비스 SQL Injection 개선<br/>
+             &emsp;❗ 검색 기능에서 특수문자 포함시 검색 오류 발생<br/>
+             &emsp;💡 검색어 escape 처리를 통해 버그 개선<br/>
+          - 모듈 간 네트워크 바이트 오더 불일치 문제 해결<br/>
+             &emsp;❗ 정전기 측정 드라이버 개발 과정에서 모듈 간 통신 오류 발생<br/>
              &emsp;💡 모듈 송/수신 바이트 디버깅, 모듈간 바이트 순서(endian) 통일하여 오류 해결
   - title: Education
     layout: list
